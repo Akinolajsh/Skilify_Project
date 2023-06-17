@@ -65,6 +65,7 @@ const Icon3 = styled(AiOutlineHeart)`
   margin-right: 3px;
   position: absolute;
   left: 325px;
+  top: 25px
 `;
 const Icon2 = styled(AiOutlinePlayCircle)`
   font-size: 20px;

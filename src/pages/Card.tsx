@@ -9,6 +9,7 @@ import img5 from "../assets/circle6.png";
 import img6 from "../assets/circle7.png";
 import img7 from "../assets/circle.svg";
 import img8 from "../assets/circle.svg";
+import img from "../assets/dots-pattern-pink.svg";
 
 const Card = () => {
   return (
@@ -32,12 +33,21 @@ const Card = () => {
             <Button width="100px" text="Join Today" />
           </Holder>
         </Main>
+        <Img src={img} />
       </Container>
     </div>
   );
 };
 
 export default Card;
+
+const Img = styled.img`
+  width: 200px;
+  height: 250px;
+  top: 300px;
+  left: -45px;
+  position: absolute;
+`;
 
 const Image = styled.img`
   position: absolute;
@@ -48,6 +58,7 @@ const Image2 = styled.img`
   position: absolute;
   left: 70px;
   top: 270px;
+  z-index: 2;
 `;
 const Image3 = styled.img`
   position: absolute;

@@ -4,7 +4,6 @@ import ImageCard from '../global/ImageCard'
 import Button from '../components/static/Button'
 import img1 from "../assets/profile-img.webp";
 import img from "../assets/crd-img.webp";
-
 import img4 from "../assets/crd-img2.webp"
 import img5 from "../assets/crd-img3.webp"
 import img6 from "../assets/profile-img1.webp"

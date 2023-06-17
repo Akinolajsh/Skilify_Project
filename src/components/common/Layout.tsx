@@ -2,18 +2,12 @@ import React from "react";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 import Header from "../common/Header";
-import Homescreen from "../../pages/HeroPage";
-import CategoryPage from "../../pages/CategoryPage";
-import Course from "../../pages/Course";
-import Card from "../../pages/Card";
+import LandingPage from "../../pages/LandingPage";
 const Layout = () => {
   return (
     <div>
       <Header />
-      <Homescreen/>
-      <CategoryPage/>
-   <Course/>
-   <Card/>
+      <LandingPage/>
       <Outlet />
       <Footer />
     </div>

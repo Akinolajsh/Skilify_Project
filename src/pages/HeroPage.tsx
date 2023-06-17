@@ -31,7 +31,7 @@ const HeroPage = () => {
 export default HeroPage;
 
 const Image = styled.img`
-  width: 5 xzx00px;
+  width: 500px;
 `;
 
 const Icon = styled(GoSearch)`
@@ -55,18 +55,19 @@ const InputHolder = styled.div`
   display: flex;
   align-items: center;
   margin: 30px 0;
+  z-index: 2;
 `;
 const SmallText = styled.div`
   margin-top: 20px;
   font-size: 25px;
   font-weight: 400;
   color: #5f5982;
-`;
+  `;
 const BigText = styled.div`
   font-size: 50px;
   font-weight: 700;
   margin-top: 80px;
-`;
+  `;
 const RightHold = styled.div`
   width: 45%;
   height: 100%;
@@ -75,8 +76,9 @@ const RightHold = styled.div`
   justify-content: flex-end;
   margin-left: 20px;
   /* background-color: lightblue; */
-`;
+  `;
 const LeftHold = styled.div`
+z-index: 2;
   width: 55%;
   height: 100%;
   display: flex;

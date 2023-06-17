@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { SiAntdesign } from "react-icons/si";
 import { iProps } from "../utils/interface";
 
 
 
 const GlobalFile: React.FC<iProps> = ({
   text,
-  icon,
+  img,
   bg,
   col,
   bgx,
@@ -18,7 +17,7 @@ const GlobalFile: React.FC<iProps> = ({
       <Container bg={`${bg}`} col={`${col}`} bgx={`${bgx}`}>
         <Main>
           <SmallBox>
-            <Icon />
+            <Img src={img}/>
           </SmallBox>
           <BigText>{bigtext}</BigText>
           <SmallText>{text}</SmallText>
@@ -30,10 +29,8 @@ const GlobalFile: React.FC<iProps> = ({
 
 export default GlobalFile;
 
-const Icon = styled(SiAntdesign)`
-  font-size: 30px;
-  color: black;
-`;
+const Img= styled.img``
+
 const SmallText = styled.div`
   color: #7e87a6;
 `;

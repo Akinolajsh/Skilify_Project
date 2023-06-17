@@ -17,7 +17,7 @@ const Button:React.FC<iButton> = ({width,text}) => {
 export default Button
 
 const Container = styled.div<{width:string}>`
-height: 40px;
+height: 50px;
 width: ${({width})=>width};
 display: flex;
 align-items: center;
