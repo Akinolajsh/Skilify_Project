@@ -11,12 +11,13 @@ const GlobalFile: React.FC<iProps> = ({
   col,
   bgx,
   bigtext,
+  sbg
 }) => {
   return (
     <div>
       <Container bg={`${bg}`} col={`${col}`} bgx={`${bgx}`}>
         <Main>
-          <SmallBox>
+          <SmallBox sbg={`${sbg}`}>
             <Img src={img}/>
           </SmallBox>
           <BigText>{bigtext}</BigText>
@@ -39,10 +40,10 @@ const BigText = styled.div`
   font-size: 25px;
   font-weight: 500;
 `;
-const SmallBox = styled.div`
+const SmallBox = styled.div<{sbg:string}>`
   height: 60px;
   width: 60px;
-  background-color: #e2ddff;
+  background-color: ${({sbg})=>sbg};
   margin-bottom: 20px;
   border-radius: 5px;
   display: flex;
@@ -50,7 +51,7 @@ const SmallBox = styled.div`
   align-items: center;
 
   :hover {
-    background-color: #edecf0;
+    background-color: white;
   }
 `;
 const Main = styled.div`
@@ -58,7 +59,6 @@ const Main = styled.div`
   height: 90%;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
 `;
 const Container = styled.div<{ bg: string; col: string; bgx: string }>`
   width: 290px;
@@ -75,5 +75,9 @@ const Container = styled.div<{ bg: string; col: string; bgx: string }>`
     cursor: pointer;
     background-color: ${({ bgx }) => bgx};
     color: ${({ col }) => col};
+  }
+
+  :hover ${SmallText}{
+    color: white;
   }
 `;

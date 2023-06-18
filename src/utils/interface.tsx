@@ -10,6 +10,8 @@ export interface iProps {
   bg?: string;
   col?: string;
   bgx?: string;
+  sbg?: string;
+  hsbg?: string;
 }
 
 export interface iCard{
@@ -31,3 +33,10 @@ export interface iCard{
     item4?: string;
     item5?: string;
   }
+
+  export interface iProps{
+    title?: string;
+    text?: string;
+    wid?: string;
+    text1?: string;
+    }

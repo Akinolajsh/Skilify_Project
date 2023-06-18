@@ -37,7 +37,7 @@ export default HeroPage;
 
 const Images = styled.img`
 position: absolute;
-bottom: -100px;
+bottom: -50px;
 left: 0px;
 `
 const Img = styled.img`
@@ -103,13 +103,14 @@ const RightHold = styled.div`
   justify-content: flex-end;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 70px;
+  margin-top: 130px;
   `;
 const LeftHold = styled.div`
 z-index: 2;
   width: 55%;
   height: 100%;
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
 `;
 const Main = styled.div`

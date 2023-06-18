@@ -57,7 +57,7 @@ export default Card2;
 const Image2 = styled.img`
   position: absolute;
   left: 740px;
-  top: 3000px;
+  top: 2930px;
   z-index: 1;
 `;
 const Div1 = styled.div`

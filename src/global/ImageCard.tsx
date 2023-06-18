@@ -57,8 +57,8 @@ const ImageCard: React.FC<iCard> = ({
             <Img1 src={img3} />
             <SmallText>{item3}</SmallText>
           </Div1>
-          <Line></Line>
           <Div1>
+          <Line></Line>
             <Fake>
             
               {item4}</Fake>
@@ -74,13 +74,12 @@ const ImageCard: React.FC<iCard> = ({
 
 export default ImageCard;
 
-const Line = styled.div`
+const Line =styled.div`
 width: 40px;
-height: 4px;
-color: red;
-/* position: absolute; */
-/* z-index: 2; */
-`;
+height: 2px;
+background-color: #bbb9c7;
+position: absolute;
+`
 const Button = styled.div``;
 const Num = styled.div``;
 
@@ -188,8 +187,9 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  transition: all 500ms ;
   :hover{
-transform: scale(1.04);
+transform: translate(0, -20px);
 cursor: pointer;
 }
 `;

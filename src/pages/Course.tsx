@@ -81,9 +81,7 @@ width: 100%;
 align-items: center;
 justify-content: space-between;
 
-:hover{
-  transform: translate
-}
+
 `
 
 const Holder=styled.div`

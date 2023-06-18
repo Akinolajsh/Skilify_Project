@@ -2,13 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 import Button from '../components/static/Button';
 import img from "../assets/apply-crd-img.png"
+import { iProps } from '../utils/interface';
 
-interface iProps{
-title?: string;
-text?: string;
-wid?: string;
-text1?: string;
-}
+
 
 
 const TeacherCard:React.FC <iProps>= ({title, text, wid, text1}) => {

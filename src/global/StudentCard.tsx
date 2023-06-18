@@ -88,10 +88,11 @@ const Container = styled.div`
   width: 500px;
   border-radius: 0 30px 0 0;
   height: 150px;
-  background-color: white;
+  background-color: #f9f9fb;
   padding: 10px 20px;
   :hover{
     cursor: pointer;
+    background-color: white;
     border-left: 3px solid orange;
   }
 `;

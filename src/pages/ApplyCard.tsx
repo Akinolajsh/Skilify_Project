@@ -26,7 +26,7 @@ export default ApplyCard;
 const Img = styled.img`
   width: 200px;
   height: 250px;
-  top: 1100;
+  bottom: 0;
   left: -45px;
   position: absolute;
 `;
@@ -44,4 +44,5 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
