@@ -121,7 +121,6 @@ const BigText = styled.div`
   letter-spacing: 3px;
   font-weight: 700;
   color: #302d3a;
-  /* background-color: green; */
   width: 100%;
   display: flex;
   align-items: center;

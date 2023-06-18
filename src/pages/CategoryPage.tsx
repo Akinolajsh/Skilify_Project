@@ -43,7 +43,7 @@ export default CategoryPage;
 
 const Bottom1 = styled.div`
   display: flex;
-  margin-top: 80px;
+  margin-top: 40px;
   justify-content: space-between;
 `;
 const Bottom = styled.div`
@@ -65,13 +65,11 @@ const Top = styled.div`
 const Main = styled.div`
   width: 90%;
   height: 90%;
-  /* background-color: red; */
 `;
 const Container = styled.div`
   width: 100%;
-  height: 900px;
+  height: 850px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
 `;

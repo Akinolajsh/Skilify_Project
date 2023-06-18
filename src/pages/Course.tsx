@@ -80,10 +80,13 @@ display: flex;
 width: 100%;
 align-items: center;
 justify-content: space-between;
+
+:hover{
+  transform: translate
+}
 `
 
 const Holder=styled.div`
-/* background-color: blue; */
 width: 100%;
 height: 20%;
 margin-bottom: 40px;
@@ -102,11 +105,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 flex-direction: column;
-/* background-color: green; */
 `
 const Container=styled.div`
 width: 100%;
-height: 800px;
+height: 750px;
 background-color: #efeff6;
 display: flex;
 justify-content: center;

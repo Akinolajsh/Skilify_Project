@@ -36,7 +36,6 @@ const Main = styled.div`
   display: flex;
   align-items: center;
   z-index: 2;
-  /* background-color: blue; */
 `;
 const Container = styled.div`
   width: 100%;

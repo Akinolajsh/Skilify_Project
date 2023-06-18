@@ -59,7 +59,6 @@ const Image2 = styled.img`
   left: 740px;
   top: 3000px;
   z-index: 1;
-  /* width: 450px; */
 `;
 const Div1 = styled.div`
   width: 500px;
@@ -101,24 +100,18 @@ const Right = styled.div`
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  /* justify-content: center;
-  align-items: center; */
-  /* background-color: purple; */
 `;
 const Left = styled.div`
   width: 50%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
-  /* background-color: yellow; */
 `;
 const Main = styled.div`
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
 `;
 const Container = styled.div`
   width: 100%;
@@ -126,5 +119,4 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: blue; */
 `;

@@ -46,7 +46,6 @@ width: 120px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-/* background-color: red; */
 `
 const Wrap =styled.div`
 display: flex;
@@ -71,7 +70,6 @@ display: flex;
 height: 70px;
 align-items: center;
 justify-content: space-between;
-/* margin-bottom: 50px; */
 `;
 const Text = styled.div`
 font-size: 55px;
@@ -84,9 +82,7 @@ const Main = styled.div`
   height: 60%;
   justify-content: space-between;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
-  /* background-color: red; */
 `;
 const Container = styled.div`
   width: 100%;
@@ -94,5 +90,4 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: pink; */
 `;

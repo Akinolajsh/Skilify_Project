@@ -50,7 +50,6 @@ width: 120px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-/* background-color: red; */
 `
 const Holder = styled.div`
 display: flex;
@@ -72,7 +71,6 @@ justify-content: space-between;
 const Main = styled.div`
 width: 90%;
 height: 80%;
-/* background-color: lightblue; */
 align-items: center;
 justify-content: center;
 flex-direction: column;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { GoSearch } from "react-icons/go";
-import image from "../assets/WhatsApp Image 2023-06-13 at 21.17.21.jpg";
+import image from "../assets/girl-img-study.webp"
+import img from "../assets/dots-pattern-pink.svg"
 const HeroPage = () => {
   return (
     <div>
@@ -18,9 +19,13 @@ const HeroPage = () => {
               <Input placeholder="Search for your favourite courses" />
               <Icon />
             </InputHolder>
+              <Images src={img}/>
           </LeftHold>
           <RightHold>
+            <Line>
             <Image src={image} />
+          <Img src={img}/>
+            </Line>
           </RightHold>
         </Main>
       </Container>
@@ -30,9 +35,30 @@ const HeroPage = () => {
 
 export default HeroPage;
 
+const Images = styled.img`
+position: absolute;
+bottom: -100px;
+left: 0px;
+`
+const Img = styled.img`
+position: absolute;
+left: 330px;
+top: 20px;
+`
 const Image = styled.img`
-  width: 500px;
+  width: 400px;
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
 `;
+
+const Line = styled.div`
+  width: 350px;
+  height: 500px;
+  border-radius: 25px;
+  border: 3px solid #f68c20;
+  position: relative;
+`
 
 const Icon = styled(GoSearch)`
   font-size: 30px;
@@ -56,6 +82,7 @@ const InputHolder = styled.div`
   align-items: center;
   margin: 30px 0;
   z-index: 2;
+  box-shadow: rgb(249,205,202) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 `;
 const SmallText = styled.div`
   margin-top: 20px;
@@ -75,7 +102,8 @@ const RightHold = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   margin-left: 20px;
-  /* background-color: lightblue; */
+  margin-right: 20px;
+  margin-top: 70px;
   `;
 const LeftHold = styled.div`
 z-index: 2;
@@ -83,7 +111,6 @@ z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: pink; */
 `;
 const Main = styled.div`
   width: 90%;
@@ -95,7 +122,7 @@ const Main = styled.div`
 `;
 const Container = styled.div`
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;

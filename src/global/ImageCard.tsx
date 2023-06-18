@@ -1,31 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import {
   AiOutlineStar,
   AiOutlineEye,
   AiOutlinePlayCircle,
-  AiOutlineHeart,
+
 } from "react-icons/ai";
+import {MdFavoriteBorder, MdFavorite} from "react-icons/md"
+import { iCard } from "../utils/interface";
 
-interface iCard {
-  img2?: any;
-  img3?: any;
-  item?: string;
-  item1?: string;
-  item2?: string;
-  title?: string;
-  item3?: string;
-  item4?: string;
-  item5?: string;
-}
+const ImageCard: React.FC<iCard> = ({
+  img2,
+  img3,
+  item,
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  title,
+}) => {
+  const [toggle, setToggle] = useState<boolean>(false);
 
-const ImageCard: React.FC <iCard>= ({img2, img3,item ,item1, item2, item3, item4, item5, title }) => {
+  const onToggle = () => {
+    setToggle(!toggle);
+  };
   return (
     <div>
       <Container>
         <Img src={img2} />
-        <Icon3 />
+        <Button onClick={()=>{
+          onToggle();
+        }}>
+         {
+          toggle ?  <Icon3 />:<Icon4 />
+          
+         }
+        </Button>
         <Recommend>
           <Div>
             <Icon /> <Num>{item}</Num>
@@ -45,8 +57,13 @@ const ImageCard: React.FC <iCard>= ({img2, img3,item ,item1, item2, item3, item4
             <Img1 src={img3} />
             <SmallText>{item3}</SmallText>
           </Div1>
+          <Line></Line>
           <Div1>
-            <Fake>{item4}</Fake>
+            <Fake>
+            
+              {item4}</Fake>
+
+            
             <Real>{item5}</Real>
           </Div1>
         </DownPart>
@@ -57,15 +74,31 @@ const ImageCard: React.FC <iCard>= ({img2, img3,item ,item1, item2, item3, item4
 
 export default ImageCard;
 
+const Line = styled.div`
+width: 40px;
+height: 4px;
+color: red;
+/* position: absolute; */
+/* z-index: 2; */
+`;
+const Button = styled.div``;
 const Num = styled.div``;
 
-const Icon3 = styled(AiOutlineHeart)`
+const Icon4 = styled(MdFavoriteBorder)`
   font-size: 30px;
   color: white;
   margin-right: 3px;
   position: absolute;
   left: 325px;
-  top: 25px
+  top: 25px;
+`;
+const Icon3 = styled(MdFavorite)`
+  font-size: 30px;
+  color: red;
+  margin-right: 3px;
+  position: absolute;
+  left: 325px;
+  top: 25px;
 `;
 const Icon2 = styled(AiOutlinePlayCircle)`
   font-size: 20px;
@@ -83,10 +116,11 @@ const Icon = styled(AiOutlineStar)`
   margin-right: 3px;
 `;
 const Real = styled.div`
-font-weight: 800;
-color: #f68c20;
+  font-weight: 800;
+  color: #f68c20;
 `;
 const Fake = styled.div`
+
   color: #8a85a3;
   margin-right: 7px;
 `;
@@ -141,7 +175,6 @@ const Img = styled.img`
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
- 
 `;
 
 const Container = styled.div`
@@ -155,4 +188,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  :hover{
+transform: scale(1.04);
+cursor: pointer;
+}
 `;
